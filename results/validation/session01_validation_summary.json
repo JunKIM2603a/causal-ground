@@ -1,0 +1,36 @@
+{
+  "stage": "session01_construct_validation_v3",
+  "decision": "R3A_RECOMMENDED_FOR_PROTOCOL_NOT_FROZEN",
+  "novelty_status": "PROVISIONAL_GAP_NOT_CERTIFIED",
+  "construction_status": "CONSTRUCTION_CHECKS_PASS_NOT_H1_EVIDENCE",
+  "python_version": "3.13.5",
+  "execution_environment": "ChatGPT container CPU; not user workstation or GitHub Actions",
+  "unit_tests_passed": 12,
+  "r2_fixture_cases": 10,
+  "r2_numerically_distinct_primary_mismatches": 5,
+  "r3_fixture_cases": 12,
+  "r3_nonredundant_identified_set_invariant_cases": 6,
+  "r3_other_controls": 6,
+  "analytic_formula_vs_exact_vertex_grid_pairs": 121,
+  "llm_calls": 0,
+  "gpu_experiments": 0,
+  "model_hypothesis_support": "NOT_TESTED",
+  "source_sha256": "5b364a5be1f1658a039e54d94e08b978a4629eb99865842fb7a346fe130e81fe",
+  "test_source_sha256": "e9176145c9d7cd1ee52201b4194d25fee13fba7bb234281c28b255d0c7025839",
+  "example": {
+    "p1": "3/10",
+    "added_p0": "2/5",
+    "target": "P(Y0=0,Y1=1)",
+    "before_bounds": ["0", "3/10"],
+    "after_bounds": ["0", "3/10"],
+    "world_a_00_01_10_11": ["3/5", "0", "1/10", "3/10"],
+    "world_b_00_01_10_11": ["3/10", "3/10", "2/5", "0"]
+  },
+  "limits": [
+    "Mathematical fixtures, not held-out model evidence.",
+    "No prompt render/parse suite, token matching, model selection or power analysis.",
+    "R2 reference scope labels are hand-specified; no generic semantic verifier.",
+    "R3 uses an unrestricted continuous binary response-type simplex and exact marginals.",
+    "No advisor approval or final researcher selection established."
+  ]
+}
