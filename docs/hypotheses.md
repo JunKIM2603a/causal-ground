@@ -2,6 +2,37 @@
 
 Updated: 2026-09-29
 
+## Latest review — v2 addendum
+
+No H1 is frozen or novelty-approved. The phrase 'after a differentiated, narrowed H1 is confirmed' describes a future exit condition, not a completed decision.
+
+The second audit is `docs/literature/2026-09-29_h1_candidate_audit_v2.md`; executable-next-work preparation is `docs/plans/session01_next_work.md` (a specification, not completed code or permission to run models).
+
+| Candidate | Latest disposition | Interpretation |
+|---|---|---|
+| H1-v0 | BROAD_NOVELTY_NOT_ACCEPTED | Motivation retained, not empirically rejected |
+| H2-v0 | NOVELTY_UNVERIFIED | Not frozen |
+| R1 | HIGH_COLLISION / NOT_SELECTED | DoVerifier includes semantic verification and self-correction; CausalForge includes statement matching. Retain as a baseline/possible mitigation, not an approved novel method |
+| R2 | DRAFT_FOR_TARGETED_AUDIT | Does a truthful computation-only verification cue increase acceptance of correct-but-inapplicable causal results? Priority for design audit, not a research PASS |
+| R3 | DRAFT_FOR_TARGETED_AUDIT | Does exact evidence enrichment that leaves a counterfactual identified set unchanged increase unwarranted point commitments? Alternative requiring oracle construct validation |
+| R4 | DEPRIORITIZED_HIGH_COLLISION | Assumption-dependent invalidation of stale results overlaps incremental auditing and stale-memory work |
+
+### H1-R2 (candidate behavioral hypothesis)
+
+For paired instances with a tool result that is correct for its declared query but inapplicable to the user's target query, exposing a truthful computation-verification cue increases erroneous answer adoption relative to a neutral presentation, while the underlying model, task, causal facts, numerical value, declared scope, and source are held fixed. General authority effects, token length/position, valid-result handling, and non-causal scope controls must be tested. A cue-effect alone does not establish a causal-specific novel mechanism.
+
+### H1-R3 (candidate behavioral hypothesis)
+
+For non-point-identified counterfactual queries, adding true observational/interventional evidence that provably leaves the target's identified set unchanged increases the LLM's unwarranted point-answer rate. Theoretical non-identifiability is not a new result; the proposed empirical contrast is the model's response to evidence enrichment without identification gain. An exact identified-set oracle and length/information controls are prerequisites, not completed work. Counterexample-certificate mitigation remains secondary.
+
+### H1-R4 (deprioritized candidate)
+
+Recording dependencies between causal assumptions and computed results reduces reuse of invalidated old results after an assumption change, without needless recomputation of unaffected results, compared with generic conversation memory. CausalForge and STALE are close prior art. Do not implement this as the next primary direction without a genuinely distinct question.
+
+Candidate prioritization is not user selection or advisor approval. No model inference, training, benchmark run, or empirical hypothesis test was performed in the v2 audit; only a small explanatory mathematical fixture was checked with exact fractions.
+
+---
+
 ## Version and decision policy
 
 No primary hypothesis is frozen. Topic selection is not novelty verification. Changes are versioned; old hypotheses and negative outcomes are not erased. Researcher agreement and the required approval state must be recorded before experimental execution.
@@ -20,7 +51,7 @@ Status: **NOT_FROZEN / NOVELTY_UNVERIFIED**. The exact interaction, comparison, 
 
 ## Candidate R1 — correct computation versus applicable evidence
 
-Status: **DRAFT_FOR_NOVELTY_AUDIT**. This is a proposal for investigation, not a selected replacement H1, not a tested finding, and not a claim that the issue is unstudied.
+Status: **DRAFT_FOR_NOVELTY_AUDIT** in the initial record; latest v2 disposition above is **HIGH_COLLISION / NOT_SELECTED**. This is a proposal for investigation, not a selected replacement H1, not a tested finding, and not a claim that the issue is unstudied.
 
 ### Research question
 
@@ -63,4 +94,4 @@ DoVerifier already studies symbolic validity of causal expressions. CausalForge 
 
 ## Next decision
 
-Approve, revise, or reject Candidate R1 after the targeted literature audit. Do not freeze it merely to move to session 02 or meet a date. Keep the project domain while avoiding another broad, already-studied H1.
+Initial next decision was to approve, revise, or reject R1 after a targeted audit. The v2 audit does not approve R1: retain it as a high-collision method/baseline option and compare R2/R3 before choosing a primary question. Do not freeze any candidate merely to move to session 02 or meet a date. Keep the project domain while avoiding another broad, already-studied H1.
